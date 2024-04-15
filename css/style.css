@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    background-color: #FFFFFF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 50px 0;
+    background-color: #D8E2DC;
+}
+
+h1, h2 {
+    color: grey;
+    text-align: center;
+}
+
+nav {
+    background-color: #FFCAD4;
+    border-color: #F4ACB7;
+    min-height: 64px;
+}
+
+nav li {
+    float: left;
+    width: 100px;
+}
+
+nav a {
+    display: block;
+    color: #9D8189;
+    line-height: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: white;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.3em;
+    color: #9D8189;
+}
+
+footer {
+    background-color: #FFCAD4;
+    color: #9D8189;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.img {
+    width: 200px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.img-container li {
+    display: inline-block;
+    width: 32%;
+    padding: 10px;
+}
+
+.img-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.img-container img {
+    width: 80%;
+    display: inline-block;
+    transition: .25s;
+}
+
+.img-container ul li {
+    list-style-type: none;
+}
+
+.inline-img {
+    width: 250px;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    margin: 30px auto;
+    background-color: #123456;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    25% {background-color: yellow;}
+    100% {transform: rotate(360deg);}
+}
+
+.inline-img img {
+    transform: scale(0.95);
+    transition: .3s;
+    max-width: 35%;
+}
+
+.inline-img img:hover {
+    transform: scale(1);
+}
